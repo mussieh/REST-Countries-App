@@ -1,0 +1,46 @@
+.chevron-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: var(--icon-color);
+}
+
+.filter-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-menu-btn {
+    width: 20rem;
+    height: 5.7rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: var(--elements);
+    font-weight: 400;
+}
+
+.filter-menu-content {
+    display: none;
+    position: absolute;
+    width: 20rem;
+    padding: 1.8rem;
+    z-index: 1;
+    border-radius: 1rem;
+    background-color: var(--elements);
+}
+
+.filter-menu:hover .filter-menu-content {
+    display: block;
+}
+
+.menu-item {
+    font-weight: 400;
+    margin-top: 1.4rem;
+    cursor: pointer;
+}
+
+.selected {
+    font-weight: bold;
+}

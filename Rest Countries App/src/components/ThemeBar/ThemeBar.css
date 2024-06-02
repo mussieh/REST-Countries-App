@@ -1,0 +1,29 @@
+.theme-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.3rem 7.8rem;
+    background-color: var(--elements);
+    border-bottom: 1px solid var(--theme-bar-border);
+}
+
+.dark-mode-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.theme-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11.5rem;
+    height: 2.6rem;
+    cursor: pointer;
+}
+
+.img-moon {
+    width: 2rem;
+    height: 2rem;
+    fill: red;
+    filter: var(--icon-color);
+}

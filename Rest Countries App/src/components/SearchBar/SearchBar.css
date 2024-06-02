@@ -1,0 +1,31 @@
+.search-input {
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: var(--text-primary);
+    background-color: var(--elements);
+}
+
+.search-input::placeholder {
+    color: var(--text-primary);
+}
+
+.search-icon {
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 2.3rem;
+    filter: var(--icon-color);
+}
+
+.search-bar {
+    width: 48.2rem;
+    height: 5.9rem;
+    display: flex;
+    align-items: center;
+    padding: 1.8rem 3.2rem;
+    color: var(--text-primary);
+    background-color: var(--elements);
+    border-radius: 1rem;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
