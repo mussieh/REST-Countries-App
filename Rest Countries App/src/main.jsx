@@ -5,7 +5,7 @@ import CountryDetails from "./pages/CountryDetails";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/REST-Countries-App/",
         element: <Home />,
     },
     {
