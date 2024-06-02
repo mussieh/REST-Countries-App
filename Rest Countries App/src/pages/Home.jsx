@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles.css";
 import ThemeBar from "../components/ThemeBar/ThemeBar";
 import SearchBar from "../components/SearchBar/SearchBar";
