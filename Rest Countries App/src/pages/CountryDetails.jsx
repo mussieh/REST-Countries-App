@@ -19,13 +19,8 @@ const CountryDetails = () => {
         navigate(-1);
     };
 
-    const getCCA3FromFifa = (fifa) => {
-        const country = countries.filter((country) => country.fifa === fifa);
-        return country[0] ? country[0].cca3 : "";
-    };
-
-    const getCountryNameFromFifa = (fifa) => {
-        const country = countries.filter((country) => country.fifa === fifa);
+    const getCountryNameFromCCA3 = (cca3) => {
+        const country = countries.filter((country) => country.cca3 === cca3);
         return country[0] ? country[0].name.common : "";
     };
 
@@ -124,10 +119,7 @@ const CountryDetails = () => {
             </div>
             <div className="border-countries-container">
                 <span style={{ fontWeight: "600" }}>Border Countries:</span>{" "}
-                {selectedCountry?.borders?.map((borderCountryFifa) => {
-                    const borderCountryCCA3 =
-                        getCCA3FromFifa(borderCountryFifa);
-
+                {selectedCountry?.borders?.map((borderCountryCCA3) => {
                     return (
                         borderCountryCCA3 && (
                             <Link
@@ -139,7 +131,7 @@ const CountryDetails = () => {
                                 state={{ countries: countries }}
                             >
                                 <button className="border-countries-btn">
-                                    {getCountryNameFromFifa(borderCountryFifa)}
+                                    {getCountryNameFromCCA3(borderCountryCCA3)}
                                 </button>
                             </Link>
                         )
