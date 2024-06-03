@@ -60,11 +60,11 @@ const CountryDetails = () => {
                         <p>
                             Native Name:{" "}
                             <span className="country-detail-span">
-                                {
-                                    Object.values(
-                                        selectedCountry.name.nativeName
-                                    ).pop().common
-                                }
+                                {selectedCountry.name?.nativeName
+                                    ? Object.values(
+                                          selectedCountry.name.nativeName
+                                      ).pop().common
+                                    : ""}
                             </span>
                         </p>
                         <p>
@@ -102,17 +102,21 @@ const CountryDetails = () => {
                         <p>
                             Currencies:{" "}
                             <span className="country-detail-span">
-                                {Object.values(
-                                    selectedCountry.currencies
-                                )[0].name.toString()}
+                                {selectedCountry?.currencies
+                                    ? Object.values(
+                                          selectedCountry.currencies
+                                      )[0].name.toString()
+                                    : ""}
                             </span>
                         </p>
                         <p>
                             Languages:{" "}
                             <span className="country-detail-span">
-                                {Object.values(selectedCountry.languages).join(
-                                    ", "
-                                )}
+                                {selectedCountry?.languages
+                                    ? Object.values(
+                                          selectedCountry.languages
+                                      ).join(", ")
+                                    : ""}
                             </span>
                         </p>
                     </div>
